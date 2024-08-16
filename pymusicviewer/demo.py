@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Description:
-# -*- coding: utf-8 -*-
-# @Time    : 2023/10/17 17:04
-# @Author  : Liang Jinaye
-# @File    : audio_view.py
-# @Description :
-# coding=gbk
 from pydub import AudioSegment
 import pyaudio
 
