@@ -3,16 +3,11 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 import urllib.parse
 
-USERNAME = "user"
-PASSWORD = "password"
+USERNAME = ""
+PASSWORD = ""
 
 
 class HttpRequestHandler(BaseHTTPRequestHandler):
-    def __init__(self, username, password, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.username = username
-        self.password = password
-
     def do_GET(self):
         if not self.is_authenticated():
             self.send_response(401)
